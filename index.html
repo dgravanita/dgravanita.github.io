@@ -99,6 +99,12 @@
       document.getElementById('paragraph1').innerHTML = "Masters student in Economics and Social Sciences at Bocconi University interested in Political and Public Economics.";
       document.getElementById('paragraph2').innerHTML = "My thesis project aims to understand who the drivers of polarisation are, using interventions in the Portuguese Parliament.";
       document.getElementById('paragraph3').innerHTML = "This website contains the latest version of the project. The dataset as well as the replication code is forthcoming.";
+    
+      window.addEventListener('load', function() {
+    // Call the showHome() function when the 'load' event is fired
+    showHome();
+  });
+    
     }
     
     function showResearch() {
