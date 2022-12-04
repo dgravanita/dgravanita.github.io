@@ -56,18 +56,18 @@
       <div class="col">
         <h1>David Gravanita</h1>
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Research</a>
+          <a href="#" onclick="showHome()">Home</a>
+          <a href="#" onclick="showResearch()">Research</a>
         </nav>
-        <p>
+        <p id="paragraph1">
           Masters student in Economics and Social Sciences at <a href="https://www.unibocconi.eu/wps/wcm/connect/Bocconi/SitoPubblico_EN/Navigation+Tree/Home/"> Bocconi University
           </a> interested in Political and Public Economics.
         </p>
-        <p>
+        <p id="paragraph2">
           My thesis project aims to understand who the drivers of polarisation are,
           using interventions in the Portuguese Parliament.
         </p>
-        <p>
+        <p id="paragraph3">
           This website contains the latest version of the project. The dataset as
           well as the replication code is forthcoming.
         </p>
@@ -77,5 +77,21 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+  <script>
+    function showHome() {
+      // Update the inner HTML of the paragraph elements to show the default content
+      document.getElementById('paragraph1').innerHTML = "Masters student in Economics and Social Sciences at <a href='https://www.unibocconi.eu/wps/wcm/connect/Bocconi/SitoPubblico_EN/Navigation+Tree/Home/'> Bocconi University
+          </a> interested in Political and Public Economics.";
+      document.getElementById('paragraph2').innerHTML = "My thesis project aims to understand who the drivers of polarisation are,
+          using interventions in the Portuguese Parliament.";
+      document.getElementById('paragraph3').innerHTML = "This website contains the latest version of the project. The dataset as
+          well as the replication code is forthcoming.";
+    }
+    
+    function showResearch() {
+      // Update the inner HTML of the paragraph elements to show the research content
+      document.getElementById('paragraph1').innerHTML = "x";
+      document.getElementById('paragraph2').innerHTML = "y";
+      document.getElementById('paragraph3').innerHTML = "z";
+    }
+  </script>
